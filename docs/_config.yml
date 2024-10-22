@@ -1,5 +1,5 @@
 title: "MedDict"
-theme: minima
+theme: just-the-docs
 
 header_pages:
   - UserGuide.md
@@ -10,6 +10,21 @@ markdown: kramdown
 
 repository: "AY2425S1-CS2103T-T08-3/tp"
 github_icon: "images/github-icon.png"
+
+just_the_docs:
+  logo: "/images/logo.png"  # Path to your logo
+  aux_links:
+    "GitHub Repository":
+      - "https://github.com/AY2425S1-CS2103T-T08-3/tp"
+  nav_order: 1
+  collections:
+    - name: "User Guide"
+      output: true
+      docs_path: "docs/UserGuide.md"
+    - name: "Developer Guide"
+      output: true
+      docs_path: "docs/DeveloperGuide.md"
+
 
 plugins:
   - jemoji
